@@ -1,0 +1,10 @@
+with open ("230_fles_test.txt", "w") as f: # w = write
+    f.write("Hello word, This is E trying to figure this fucking thing")
+    f.close()
+    
+    with open ("230_fles_test.txt", "r") as f: # f becomes the variable
+    print (type(f)) # useful to know?
+    contents = f.read()
+    f.close ()
+    print (contents)
+    Hello word, This is E trying to figure this fucking thing
